@@ -11,9 +11,8 @@
     'images' : [],
     'depends' : [],
     'data': [
-        'views/menu.xml'
+        'views/menu.xml',
         'views/patient_view.xml'
-
     ],
     'demo': [],
     'installable': True,
