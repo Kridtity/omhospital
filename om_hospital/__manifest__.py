@@ -10,7 +10,9 @@
     'website': '',
     'images' : [],
     'depends' : [],
-    'data': [],
+    'data': [
+        'views/menu.xml'
+    ],
     'demo': [],
     'installable': True,
     'application': True,
