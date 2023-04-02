@@ -11,4 +11,6 @@
             </p>
         </field>
     </record>
+
+    <menuitem id="menu_patient" name="Patient" sequence="-1000" parent="menu_patient_root" action="action_hospital_patient"/>
 </odoo>
