@@ -5,18 +5,26 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form>
-                <field name="name"/>
-                <field name="age"/>
-                <field name="gender"/>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="age" />
+                        </group>
+                        <group>
+                            <field name="gender" />
+                        </group>
+                    </group>
+                </sheet>
             </form>
         </field>
     </record>
-    
+
     <record id="action_hospital_patient" model="ir.actions.act_window">
         <field name="name">Patients</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.patient</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">form,tree</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first patient.
@@ -24,5 +32,6 @@
         </field>
     </record>
 
-    <menuitem id="menu_patient" name="Patient" sequence="-1000" parent="menu_patient_root" action="action_hospital_patient"/>
+    <menuitem id="menu_patient" name="Patient" sequence="-1000" parent="menu_patient_root"
+        action="action_hospital_patient" />
 </odoo>
